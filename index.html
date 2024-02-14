@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil fitness</title>
+</head>
+
+<style>
+    /* css reset */
+    header{
+        display: flex;
+    }
+    body{
+    margin:0px;
+    padding:0px;
+    background:url('bgg.jpg');
+    background-size: cover ;
+    color:white;
+    font-family: cursive;
+    /* box-sizing:border-box; */
+    }
+    .left{
+          border:2px solid rgb(22, 21, 21);
+          display:inline-block ;
+          position:absolute;
+          left:34px;
+          top:20px;
+    }
+    .left img{
+        width:60px;
+        /* filter:invert(100%); */
+    }
+    .left div{
+        text-align: center;
+        line-height:50px;
+        font-size: 26px ;
+    }
+    .mid{
+        display:inline-block;
+        /* width:25%; */
+        margin:45px auto;
+        border:2px solid black;
+        font-size:26px;
+        /* text-align: center; */
+    }
+    
+    .right{
+        position:absolute;
+        right:34px;
+        top:50px;
+        border:2px solid rgb(15, 15, 15);
+        display:inline-block
+    }
+    .navbar{
+        display:inline-block;
+
+    }
+    .navbar li{
+        display:inline-block;
+        font-size:15px;
+
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:16px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color:grey;
+    }
+    .btn{
+        margin:0px 9px;
+        color:white;
+        background-color:black;
+        padding:4px 14px;
+        border:2px solid grey;
+        border-radius: 10px; 
+        font-size:15px;
+        cursor:pointer;
+    }
+   .btn:hover{
+    background-color: grey;
+   }
+   .container{
+    border: 2px solid white;
+    margin: 0px 256px;
+    padding: 28px;
+    width: 30%;
+    border-radius:20px; 
+   }
+   
+   .formgroup input{
+    text-align: center;
+    display: block;
+    width: 405px;
+    padding: 2px;
+    border: 1px solid black;
+    margin: 9px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-family: cursive;
+   }
+   .container h1{
+    color:white ;
+    text-align:center;
+    text-shadow:2px 2px black;
+   }
+   .container button{
+    display:block;
+    margin:20px auto;
+    width:75%;
+   }
+   
+
+</style> 
+<body>
+    <header class="header">  
+
+         
+      <div class="left">
+      <!-- left box for logo -->
+       <!-- <img src="img/bg.jpg" alt=""> -->
+       <div>Anil Fitness</div>
+      </div>
+
+
+     <div class="mid">
+            <!-- midbox for navbar -->
+            <ul class="navbar">
+                <li><a href="#"  class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator </a></li>
+                <li><a href="#">Contact Us</a></li>
+         </ul>
+
+      </div>
+
+
+
+            <div class="right">
+                <!--right box for buttons -->
+
+             <button class="btn">Call US Now</button>
+             <button class="btn">Email US</button>
+
+            </div>
+    </header>
+    <div class="container">
+    <h1>Join the Best Gym of Karimnagar now</h1>
+    <form action="noaction.php">
+     <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Name">
+     </div>  
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Age">
+     </div> 
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Gender">
+     </div> 
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your Locality">
+     </div> 
+     <button class="btn">Submit </button> 
+    </form>
+    </div>
+</body>
+</html>
